@@ -37,3 +37,21 @@ function scrollHeader() {
   }
 }
 
+// Main-vertical-slider ========================================================================================================================================================
+
+let mainVerticalSlider = document.querySelector('.main-vertical-swiper');
+
+let swiperMain = new Swiper(mainVerticalSlider, {
+  direction: 'vertical',
+  mousewheel: {
+    invert: true,
+  },
+  speed: 800,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+
+});

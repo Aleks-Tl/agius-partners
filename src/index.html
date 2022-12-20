@@ -7,7 +7,14 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <div class="container"></div>
+      <div class="swiper main-vertical-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('img/promo-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">Slide - 1</div>
+          <div class="swiper-slide" style="background-color: green;">Slide - 2</div>
+          <div class="swiper-slide" style="background-color: blue;">Slide - 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </main>
 
     @include('partials/footer.html')
